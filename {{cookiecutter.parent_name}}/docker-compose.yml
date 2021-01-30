@@ -10,6 +10,8 @@ services:
       - ./data/{{cookiecutter.service_name}}:/container/data/path
     # ports:
     # environment:
+    labels:
+#       - "traefik.enable=true"
 
 
 
