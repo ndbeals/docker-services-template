@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  {{cookiecutter.service_name}}:
+    image: 
+    # container_name: 
+    restart: unless-stopped
+    volumes:
+      - ./config/{{cookiecutter.service_name}}:/container/config/path
+      - ./data/{{cookiecutter.service_name}}:/container/data/path
+    # ports:
+    # environment:
+
+
+
+networks:
+  proxy:
+    external:
+      name: proxy
